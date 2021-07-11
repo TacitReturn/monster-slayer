@@ -1,5 +1,6 @@
-# monster-slayer
 
+# monster-slayer
+![alt text](./public/img/2021-07-10%20(2).png "Screen Shot")
 ## Project setup
 ```
 npm install

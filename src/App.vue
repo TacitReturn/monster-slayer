@@ -1,26 +1,29 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <v-app>
+    <v-main>
+      <v-app-bar density='compact' class="bg-blue-darken-2">
+        <v-app-bar-title class="text-white">
+          Monster Slayer
+        </v-app-bar-title>
+      </v-app-bar>
+      <MonsterSlayer></MonsterSlayer>
+    </v-main>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import MonsterSlayer from './components/MonsterSlayer.vue'
+
 
 export default {
   name: 'App',
+
   components: {
-    HelloWorld
-  }
+    MonsterSlayer,
+  },
+
+  data: () => ({
+    //
+  }),
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
